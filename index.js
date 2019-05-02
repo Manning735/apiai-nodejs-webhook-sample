@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 app.use(bodyParser.json())
-app.set('port', (process.env.PORT || 5000))
+app.set('port', (process.env.PORT || 50932))
 
 const REQUIRE_AUTH = true
 const AUTH_TOKEN = 'an-example-token'
@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
   res.send('Use the /webhook endpoint.')
 })
 app.get('/webhook', function (req, res) {
-  res.send('You must POST your request')
+  res.send('Just a test')
 })
 
 app.post('/webhook', function (req, res) {
