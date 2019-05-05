@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
   res.send('Use the /webhook endpoint.')
 })
 app.get('/webhook', function (req, res) {
-  res.send('You must POST your request')
+  res.send('You ur request')
 })
 
 app.post('/webhook', function (req, res) {
